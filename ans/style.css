@@ -1,0 +1,79 @@
+@charset "UTF-8";
+
+/* =========================================
+   このファイルに回答を記述してください。
+   ========================================= */
+
+/* 例: 特定の要素を赤くするスタイルは以下のように記述してください*/
+
+/* 
+  ヒント:
+  #q1 .container > [ここにセレクタ] {
+      background-color: #ff5252;
+      color: white;
+      font-weight: bold;
+  }
+*/
+
+#q1 .container>li:first-child {
+  background-color: #ff5252;
+  color: white;
+  font-weight: bold;
+}
+
+#q2 .container>li:last-child {
+  background-color: #ff5252;
+  color: white;
+  font-weight: bold;
+}
+
+#q3 .container>li:nth-child(3) {
+  background-color: #ff5252;
+  color: white;
+  font-weight: bold;
+}
+
+#q4 .container>p:first-of-type {
+  background-color: #ff5252;
+  color: white;
+  font-weight: bold;
+}
+
+#q5 .container>p:last-of-type {
+  background-color: #ff5252;
+  color: white;
+  font-weight: bold;
+}
+
+#q6 .container>p:nth-of-type(2) {
+  background-color: #ff5252;
+  color: white;
+  font-weight: bold;
+}
+
+#q7 .container>div:first-of-type {
+  background-color: #ff5252;
+  color: white;
+  font-weight: bold;
+}
+
+#q8 .container>:nth-child(3) {
+  background-color: #ff5252;
+  color: white;
+  font-weight: bold;
+}
+
+
+/* Q9: (Update) List > Item > Link */
+#q9 .container li:nth-child(3)>a {
+  background-color: #ff5252;
+  color: white;
+  font-weight: bold;
+}
+
+/* Q10: (Update) Article > List */
+#q10 .container article:nth-of-type(2) ul li:nth-of-type(2) {
+  background-color: #ff5252;
+  color: white;
+  font-weight: bold;
+}

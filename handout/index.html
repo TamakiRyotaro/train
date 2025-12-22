@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Pseudo-class Drill</title>
+  <link rel="stylesheet" href="common.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1>CSS Pseudo-class Drill</h1>
+    <p>(Target)の要素を赤くしてください。</p>
+  </header>
+
+  <main>
+    <!-- Level 1: Basic List -->
+    <section class="drill-section" id="q1">
+      <h2>Q1: 1番目の要素 (Level 1)</h2>
+      <p>リストの<strong>1番目</strong>のアイテムを選択してください。(<code>-child</code>系使用)</p>
+      <ul class="container">
+        <li>Item 1 (Target)</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+      </ul>
+    </section>
+
+    <section class="drill-section" id="q2">
+      <h2>Q2: 最後の要素 (Level 1)</h2>
+      <p>リストの<strong>最後</strong>のアイテムを選択してください。(<code>-child</code>系使用)</p>
+      <ul class="container">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5 (Target)</li>
+      </ul>
+    </section>
+
+    <section class="drill-section" id="q3">
+      <h2>Q3: 3番目の要素 (Level 1)</h2>
+      <p>リストの<strong>3番目</strong>のアイテムを選択してください。</p>
+      <ul class="container">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3 (Target)</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+      </ul>
+    </section>
+
+    <!-- Level 2: Mixed Elements -->
+    <section class="drill-section" id="q4">
+      <h2>Q4: 最初の段落 (Level 2)</h2>
+      <p>コンテナ内の<strong>最初の段落(p)</strong>を選択してください。</p>
+      <div class="container">
+        <h1>Title</h1>
+        <p>First P (Target)</p>
+        <p>Middle P</p>
+        <p>Last P</p>
+        <button>Button</button>
+      </div>
+    </section>
+
+    <section class="drill-section" id="q5">
+      <h2>Q5: 最後の段落 (Level 2)</h2>
+      <p>コンテナ内の<strong>最後の段落(p)</strong>を選択してください。</p>
+      <div class="container">
+        <h1>Title</h1>
+        <p>First P</p>
+        <p>Middle P</p>
+        <p>Last P (Target)</p>
+        <button>Button</button>
+      </div>
+    </section>
+
+    <section class="drill-section" id="q6">
+      <h2>Q6: 2番目の段落 (Level 2)</h2>
+      <p>コンテナ内の<strong>2番目の段落(p)</strong>を選択してください。</p>
+      <div class="container">
+        <h1>Title</h1>
+        <p>First P</p>
+        <p>Middle P (Target)</p>
+        <p>Last P</p>
+        <button>Button</button>
+      </div>
+    </section>
+
+    <!-- Level 3: "Trap" Structures -->
+    <section class="drill-section" id="q7">
+      <h2>Q7: 最初のdiv (Level 3)</h2>
+      <p>コンテナ内の<strong>最初のdiv</strong>を選択してください。</p>
+      <div class="container">
+        <h2>Heading</h2>
+        <div>Div 1 (Target)</div>
+        <p>Paragraph</p>
+        <div>Div 2</div>
+        <span>Span</span>
+        <div>Div 3</div>
+      </div>
+    </section>
+
+    <section class="drill-section" id="q8">
+      <h2>Q8: 3番目の子要素 (Level 3)</h2>
+      <p>種類に関係なく、このコンテナの<strong>3番目の子要素</strong>を選択してください。</p>
+      <div class="container">
+        <h2>Heading</h2>
+        <div>Div 1</div>
+        <p>Paragraph (Target)</p>
+        <div>Div 2</div>
+        <span>Span</span>
+        <div>Div 3</div>
+      </div>
+    </section>
+
+    <section class="drill-section" id="q9">
+      <h2>Q9: 入れ子のリスト (Level 3.5)</h2>
+      <p>リストの<strong>3番目</strong>の項目(li)の中にある<strong>リンク(a)</strong>を選択してください。</p>
+      <ul class="container">
+        <li>Item 1 <a href="#">Link</a></li>
+        <li>Item 2 (Text only)</li>
+        <li>Item 3 <a href="#">Link (Target)</a></li>
+        <li>Item 4 <a href="#">Link</a></li>
+      </ul>
+    </section>
+
+    <!-- Level 4: Deep/Complex Structure -->
+    <section class="drill-section" id="q10">
+      <h2>Q10: 複雑なカード構造 (Level 4)</h2>
+      <p><strong>2番目のカード(article)</strong>の中にある、リストの<strong>最後の項目</strong>を選択してください。</p>
+      <div class="container" style="flex-direction: row; flex-wrap: wrap;">
+        <article class="card">
+          <h3>Topic A</h3>
+          <p>Description...</p>
+        </article>
+        <article class="card">
+          <h3>Topic B</h3>
+          <ul>
+            <li>Feature 1</li>
+            <li>Feature 2 (Target)</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Topic C</h3>
+          <p>Coming soon</p>
+        </article>
+      </div>
+    </section>
+
+  </main>
+</body>
+
+</html>

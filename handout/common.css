@@ -1,0 +1,130 @@
+@charset "UTF-8";
+
+body {
+  font-family: sans-serif;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.drill-section {
+  background: #fff;
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.drill-section h2 {
+  margin-top: 0;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.drill-section p {
+  margin-bottom: 15px;
+  font-weight: bold;
+  color: #555;
+}
+
+/* Visualization Containers */
+.container {
+  border: 2px dashed #bbb;
+  padding: 20px;
+  background: #fafafa;
+  list-style: none;
+  /* for ul */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Items inside container (Direct Children) */
+.container>* {
+  padding: 10px;
+  background: #e0e0e0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin: 0;
+}
+
+/* Nested Elements Styling (New for Q9/Q10) */
+.container li {
+  background: #fff9c4;
+  padding: 5px;
+  margin: 5px 0;
+  list-style: none;
+}
+
+.container a {
+  display: inline-block;
+  background: #fff;
+  padding: 2px 6px;
+  border: 1px solid #999;
+  text-decoration: none;
+  color: #333;
+}
+
+.container article {
+  background: #fff;
+  border: 1px solid #aaa;
+  padding: 10px;
+  flex: 1;
+  min-width: 150px;
+}
+
+/* Specific styling for clarity */
+.container>h1,
+.container>h2,
+.container>h3,
+.container article h3 {
+  background: #d1c4e9;
+  margin-top: 0;
+  padding: 5px;
+}
+
+.container>div {
+  background: #b3e5fc;
+}
+
+.container>p,
+.container article p {
+  background: #c8e6c9;
+  margin: 5px 0;
+  padding: 5px;
+}
+
+.container>span {
+  background: #ffe0b2;
+  display: block;
+}
+
+.container>button {
+  background: #f0f0f0;
+  cursor: pointer;
+}
+
+.container>blockquote {
+  background: #e1bee7;
+  margin: 0;
+}
+
+.container>hr {
+  width: 100%;
+  margin: 0;
+  border-top: 2px solid #999;
+}
+
+.container>footer {
+  background: #cfd8dc;
+}
+
+/* --- Example Answer Styles --- */
+/* .container .target-element { background-color: #ff5252 !important; ... } */
