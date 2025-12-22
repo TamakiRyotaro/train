@@ -14,23 +14,61 @@
       font-weight: bold;
   }
 */
+#q1 .container li:first-child {
+  background-color: #ff5252;
+  color: white;
+  font-weight: bold;
+}
+#q2 .container li:last-child {
+  background-color: #ff5252;
+  color: white;
+  font-weight: bold;
+}
 
-#q1 .container {}
+#q3 .container li:nth-child(3){
+  background-color: #ff5252;
+  color: white;
+  font-weight: bold;
+}
 
-#q2 .container {}
+#q4 .container p:first-of-type{
+  background-color: #ff5252;
+  color: white;
+  font-weight: bold;
+}
 
-#q3 .container {}
+#q5 .container p:last-of-type{
+  background-color: #ff5252;
+  color: white;
+  font-weight: bold;
+}
 
-#q4 .container {}
+#q6 .container p:nth-of-type(2){
+  background-color: #ff5252;
+  color: white;
+  font-weight: bold;
+}
 
-#q5 .container {}
+#q7 .container div:first-of-type{
+  background-color: #ff5252;
+  color: white;
+  font-weight: bold;
+}
 
-#q6 .container {}
+#q8 .container p:nth-child(3){
+  background-color: #ff5252;
+  color: white;
+  font-weight: bold;
+}
 
-#q7 .container {}
+#q9 .container li:nth-child(3) a{
+  background-color: #ff5252;
+  color: white;
+  font-weight: bold;
+}
 
-#q8 .container {}
-
-#q9 .container {}
-
-#q10 .container {}
+#q10 .container .card:nth-of-type(2) li:last-child{
+  background-color: #ff5252;
+  color: white;
+  font-weight: bold;
+}
